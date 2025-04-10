@@ -20,7 +20,7 @@ const Navigation = () => {
   return (
     <nav>
       <button
-        className="lg:hidden z-10 relative"
+        className="relative z-10 lg:hidden"
         onClick={() => {
           setShowMenu(!showMenu);
         }}
@@ -29,9 +29,9 @@ const Navigation = () => {
       </button>
       <div
         className={
-          "gap-4 lg:gap-10 font-figtree text-lg " +
+          "font-figtree gap-4 text-lg lg:gap-10 " +
           (showMenu
-            ? "flex flex-col items-end absolute left-0 top-0 bg-black w-full px-10 pt-20 pb-4"
+            ? "absolute top-0 left-0 flex w-full flex-col items-end bg-black px-10 pt-20 pb-4"
             : "hidden lg:flex")
         }
       >

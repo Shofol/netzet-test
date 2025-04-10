@@ -7,20 +7,20 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      <div className="flex flex-col items-center lg:items-start max-w-7xl mx-auto py-4 w-full relative px-10">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center px-10 py-4 lg:items-start">
         <Header />
         <main>
-          <div className="flex flex-col lg:flex-row ">
+          <div className="flex flex-col lg:flex-row">
             <Image
               src={"/mobile-mockup.png"}
               width={666}
               height={679}
               alt="background image"
-              className="pt-10 pb-0 lg:py-0 order-1 lg:order-2 -z-1 lg:-mt-20"
+              className="-z-1 order-1 pt-10 pb-0 lg:order-2 lg:-mt-20 lg:py-0"
             />
 
-            <div className="flex flex-col justify-center order-2 lg:order-1 lg:mt-16">
-              <div className="text-2xl lg:text-4xl text-center lg:text-start font-bold font-urbanist">
+            <div className="order-2 flex flex-col justify-center lg:order-1 lg:mt-16">
+              <div className="font-urbanist text-center text-2xl font-bold lg:text-start lg:text-4xl">
                 <p className="relative">
                   Want to Turn Social Media <br className="lg:hidden" /> Into a
                   Profitable Career?{" "}
@@ -30,7 +30,7 @@ export default function Home() {
                   with Fametonic:
                 </p>
               </div>
-              <ul className="max-w-xl mx-auto lg:mt-4">
+              <ul className="mx-auto max-w-xl lg:mt-4">
                 <Feature text="Start growing your influence right away—no waiting required!" />
                 <Feature
                   text="Create viral TikToks and Reels step by step with easy-to-follow
@@ -41,18 +41,18 @@ export default function Home() {
               </ul>
 
               <div className="flex flex-col">
-                <div className="order-1 lg:order-2 text-br-gray text-center lg:text-start mt-4 xs:mx-20 font-figtree">
-                  <p className="text-sm pt-4 lg:pt-0">
+                <div className="text-br-gray xs:mx-20 font-figtree order-1 mt-4 text-center lg:order-2 lg:text-start">
+                  <p className="pt-4 text-sm lg:pt-0">
                     By clicking &quot;Get Started&quot;, you agree with Terms
                     and Conditions, Privacy Policy, Subscription Terms
                   </p>
-                  <p className="text-xs mt-5 mb-2">
+                  <p className="mt-5 mb-2 text-xs">
                     Fametonic 2025 ©All Rights Reserved.
                   </p>
                 </div>
 
-                <div className="xs:mx-10 lg:max-w-[313px] order-2 lg:order-1">
-                  <button className=" cursor-pointer text-xl rounded-lg py-3 lg:py-2 flex items-center justify-center bg-secondary hover:bg-secondary/80 duration-200 w-full shadow-btn mt-10 font-urbanist font-bold">
+                <div className="xs:mx-10 order-2 lg:order-1 lg:max-w-[313px]">
+                  <button className="bg-secondary hover:bg-secondary/80 shadow-btn font-urbanist mt-10 flex w-full cursor-pointer items-center justify-center rounded-lg py-3 text-xl font-bold duration-200 lg:py-2">
                     <span>GET STARTED</span>
                     <Image
                       src={"/arrow.svg"}
@@ -62,7 +62,7 @@ export default function Home() {
                       alt="arrow icon"
                     />
                   </button>
-                  <p className="mt-3 mb-10 text-center font-figtree text-sm">
+                  <p className="font-figtree mt-3 mb-10 text-center text-sm">
                     1-minute quiz for personalized Insights
                   </p>
                 </div>

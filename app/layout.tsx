@@ -4,10 +4,12 @@ import "./globals.css";
 
 const figtree = Figtree({
   variable: "--font-figtree",
+  subsets: ["latin"],
 });
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

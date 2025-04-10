@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Feature = ({ text }: { text: string }) => {
   return (
-    <li className="mt-4 flex items-start gap-2 font-figtree">
+    <li className="font-figtree mt-4 flex items-start gap-2">
       <Image
         src={"/sprinkle.svg"}
         width={20}
