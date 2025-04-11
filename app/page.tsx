@@ -11,26 +11,26 @@ export default function Home() {
         <Header />
         <main>
           <div className="flex flex-col lg:flex-row">
-            <Image
-              src={"/mobile-mockup.png"}
-              width={666}
-              height={679}
-              alt="background image"
-              className="-z-1 order-1 pt-10 pb-0 lg:order-2 lg:-mt-20 lg:py-0"
-            />
+            <div className="order-1 flex flex-1 items-center lg:order-2">
+              <Image
+                src={"/mobile-mockup.png"}
+                width={666}
+                height={679}
+                alt="background image"
+                className="-z-1 pt-10 pb-0 lg:-mt-20 lg:py-0"
+              />
+            </div>
 
-            <div className="order-2 flex flex-col justify-center lg:order-1 lg:mt-16">
+            <div className="order-2 flex flex-1 flex-col justify-center lg:order-1 lg:mt-16">
               <div className="font-urbanist text-center text-2xl font-bold lg:text-start lg:text-4xl">
                 <p className="relative">
-                  Want to Turn Social Media <br className="lg:hidden" /> Into a
-                  Profitable Career?{" "}
+                  Want to Turn Social Media Into a Profitable Career?
                 </p>
                 <p className="text-brand drop-shadow-text pt-2">
-                  Discover your way to success <br className="lg:hidden" />
-                  with Fametonic:
+                  Discover your way to success with Fametonic:
                 </p>
               </div>
-              <ul className="mx-auto max-w-xl lg:mt-4">
+              <ul className="mx-auto max-w-xl lg:mx-0 lg:mt-4">
                 <Feature text="Start growing your influence right away—no waiting required!" />
                 <Feature
                   text="Create viral TikToks and Reels step by step with easy-to-follow
